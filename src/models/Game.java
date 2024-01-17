@@ -1,10 +1,14 @@
 package models;
 
-import strategies.WinningStrategies;
+import lombok.Getter;
+import lombok.Setter;
+import strategies.winning.WinningStrategies;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
+@Setter
 public class Game {
     public Board board;
     private List<Player> players;
@@ -14,16 +18,12 @@ public class Game {
     private Player winner;
     private List<WinningStrategies> winningStrategies;
 
-    public Game(int dimensions, List<Player> players, List<WinningStrategies> winningStrategies) {
+    public Game(int dimension, List<Player> players, List<WinningStrategies> winningStrategies) {
         this.players = players;
         this.winningStrategies = winningStrategies;
-        this.board = createBoard(dimensions);
+        this.board = new Board(dimension);
         this.moves = new ArrayList<>();
         this.nextPlayerIndex = 0;
         this.gameState = GameState.INIT;
-    }
-
-    private Board createBoard(int dimensions) {
-        return new Board(dimensions);
     }
 }

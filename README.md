@@ -8,6 +8,26 @@ Tic-Tac-Toe is a classic 2-player game played on an NxN board. Each player, repr
 
 You can even play the game within Google Search by searching for "tictactoe"! 🕹️
 
+## Problem Requirements 📋
+
+- Board can be of any NxN size.
+
+- Two players, each assigned a symbol (O or X).
+
+- Players can be human or bot.
+
+- Human players have a name, email, and profile image.
+
+- Bot players have a difficulty level.
+
+- The game starts with a random player.
+
+- Players take turns playing alternatively.
+
+- The player with any consecutive N symbols in a row, column, or diagonal wins.
+
+- If the board is full and no player has won, the game is a draw.
+
 ## Questions to Consider ❓
 
 - **Number of Players:** Will the game be played among only 2 players, or can there be any number of players in the future?
@@ -42,25 +62,6 @@ You can even play the game within Google Search by searching for "tictactoe"! �
 
 - No need for a graphical user interface (GUI).
 
-## Problem Requirements 📋
-
-- Board can be of any NxN size.
-
-- Two players, each assigned a symbol (O or X).
-
-- Players can be human or bot.
-
-- Human players have a name, email, and profile image.
-
-- Bot players have a difficulty level.
-
-- The game starts with a random player.
-
-- Players take turns playing alternatively.
-
-- The player with any consecutive N symbols in a row, column, or diagonal wins.
-
-- If the board is full and no player has won, the game is a draw.
 
 ## Getting Started 🚀
 

@@ -40,6 +40,11 @@ You can even play the game within Google Search by searching for "tictactoe"! �
 
 - **Bot Player:** Can one of the players be a bot?
 
+## Class Diagram 🪄
+
+![Class Diagram](ClassDiagram.png)
+
+
 ## Feature Suggestions 🚀
 
 - **Move Timing:** Should there be a time limit for each move? Can a player be declared the winner if the move doesn’t happen within x seconds?
@@ -66,17 +71,23 @@ You can even play the game within Google Search by searching for "tictactoe"! �
 
 ## Getting Started 🚀
 
-1. Clone the repository:
+1. **Clone the Repository:**
 
    ```bash
    git clone https://github.com/xoraus/TicTacToe.git
    ```
 
-2. Navigate to the project directory:
-   ```bash
-   cd tic-tac-toe
-   ```
+2. **Import the Project into IntelliJ:**
 
+3. **Navigate to the Project Directory:**
+   - Open IntelliJ IDEA.
+   - Click on `File` > `Open...` and select the project folder.
+   - Once the project is loaded, navigate to the project directory.
+
+4. **Run the Application:**
+   - Click on `Run` > `Main.java` to execute the main class.
+
+Now you are ready to explore and run the Tic Tac Toe application. 🎉
 ## Contribution Guidelines 🤝
 
 Contributions are welcome! If you have any ideas or improvements, feel free to open an issue or submit a pull request.

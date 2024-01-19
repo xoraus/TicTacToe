@@ -1,6 +1,6 @@
 import controllers.GameController;
 import controllers.PlayerController;
-import models.Constants;
+import constants.Constants;
 import models.DifficultyLevel;
 import models.Game;
 import models.Player;

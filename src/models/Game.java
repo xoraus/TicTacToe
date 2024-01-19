@@ -2,7 +2,7 @@ package models;
 
 import lombok.Getter;
 import lombok.Setter;
-import strategies.winning.WinningStrategies;
+import strategies.winning.WinningStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,9 +16,9 @@ public class Game {
     private int nextPlayerIndex;
     private GameState gameState;
     private Player winner;
-    private List<WinningStrategies> winningStrategies;
+    private List<WinningStrategy> winningStrategies;
 
-    public Game(int dimension, List<Player> players, List<WinningStrategies> winningStrategies) {
+    public Game(int dimension, List<Player> players, List<WinningStrategy> winningStrategies) {
         this.players = players;
         this.winningStrategies = winningStrategies;
         this.board = new Board(dimension);

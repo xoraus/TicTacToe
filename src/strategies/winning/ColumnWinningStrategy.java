@@ -2,25 +2,29 @@ package strategies.winning;
 
 import models.Board;
 import models.Cell;
-import models.CellState;
 import models.Player;
 
-public class ColumnWinningStrategy implements WinningStrategies{
-    @Override
-    public Boolean checkWin(Cell cell, Board board) {
-        Player currentPlayer = cell.getPlayer();
+import java.util.HashMap;
 
+public class ColumnWinningStrategy implements WinningStrategy {
+
+
+    private final HashMap<Player, HashMap<Integer, Integer>> counts = new HashMap<>();
+    @Override
+    public boolean checkWin(Cell cell, Board board) {
+        Player currentPlayer = cell.getPlayer();
         int col = cell.getCol();
 
-        int row = cell.getRow();
-
-        for (int i = 0; i < board.getSize(); i++) {
-            Cell currentCell = board.getBoard().get(row).get(i);
-            if(currentCell.getCellState().equals(CellState.EMPTY) || !currentCell.getPlayer().equals(currentPlayer)){
-                return  false;
-            }
+        if (!counts.containsKey(currentPlayer)) {
+            counts.put(currentPlayer, new HashMap<>());
         }
 
-        return true;
+        if (!counts.get(currentPlayer).containsKey(col)) {
+            counts.get(currentPlayer).put(col, 0);
+        }
+
+        int cnt = counts.get(currentPlayer).get(col);
+        counts.get(currentPlayer).put(col, cnt + 1);
+        return cnt + 1 == board.getSize();
     }
 }

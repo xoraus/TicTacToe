@@ -1,12 +1,14 @@
 # Tic-Tac-Toe 🎮
 
-![Tic-Tac-Toe Banner](https://img.freepik.com/premium-vector/tic-tac-toe-game-vector-illustration-icon-template-design_665655-4580.jpg?w=300)
+![TicTacToe](TicTacToe.gif)
 
 ## Overview 🌐
 
 Tic-Tac-Toe is a classic 2-player game played on an NxN board. Each player, represented by a symbol (X or O), takes turns placing their symbol in an empty slot. The first player to form a complete row, column, or diagonal wins the game.
 
 You can even play the game within Google Search by searching for "tictactoe"! 🕹️
+
+![Tic-Tac-Toe Banner](https://img.freepik.com/premium-vector/tic-tac-toe-game-vector-illustration-icon-template-design_665655-4580.jpg?w=150)
 
 ## Problem Requirements 📋
 
@@ -31,7 +33,7 @@ You can even play the game within Google Search by searching for "tictactoe"! �
 ## Questions to Consider ❓
 
 - **Number of Players:** Will the game be played among only 2 players, or can there be any number of players in the future?
-  
+
 - **Board Size:** Is the board size restricted to 3x3, or can it be any NxN?
 
 - **Winning Criteria:** Can there be different ways to win?
@@ -62,10 +64,10 @@ You can even play the game within Google Search by searching for "tictactoe"! �
 
 - No need for a graphical user interface (GUI).
 
-
 ## Getting Started 🚀
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/xoraus/TicTacToe.git
    ```

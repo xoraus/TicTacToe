@@ -42,7 +42,7 @@ You can even play the game within Google Search by searching for "tictactoe"! �
 
 ## Class Diagram 🪄
 
-![Class Diagram](ClassDiagram.png)
+![Classes in  TicTacToe](ClassDiagram.png)
 
 
 ## Feature Suggestions 🚀
